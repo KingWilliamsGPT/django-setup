@@ -1,0 +1,21 @@
+{% extends "common/personalized/ebay_base.html" %}
+
+{% block TitleBlock %}{{title}}{% endblock %}
+{% block InfoBlock %}{{info}}{% endblock %}
+{% block MessageBlock %}{{msg|safe}}{% endblock %}
+
+{% block FooterBlock %}
+    {% if footer %}
+        {{footer|safe}}
+    {% else %}    
+        {{ block.super }}
+    {% endif %}  
+{% endblock %}
+
+{% block SilentBlock %}
+    {% if silent_footer %}
+        {{silent_footer}}
+    {% else %}    
+        {{ block.super }}
+    {% endif %}    
+{% endblock %}

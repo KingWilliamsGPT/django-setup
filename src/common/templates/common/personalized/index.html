@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    </head>
+    <body bgcolor="#f7f7f7" style="background: #f7f7f7; font-family: roboto,arial,sans-serif; padding: 20px 0;">
+        <table align="center" cellspacing="0" bgcolor="#fff" style="background: #fff; margin-top: 20px; margin-bottom: 20px; border: 1px solid #dcdcdc; border-spacing: 0px; border-collapse: collapse; line-height: 22px;">
+            <tbody>
+                <tr>
+                    <td style="padding: 40px 0 0 20px; width: 400px; font-size: 14px; color: #2f383d; line-height: 22px;" border="0">
+                        <strong style="font-size: 22px; color: #2f383d; font-weight: 700; margin-left: 10px;">Purchased product</strong>
+                        <br>
+                        <span style="font-size: 14px; color: #888888; display: block; margin-top: 5px; margin-left: 10px; max-width: 350px;">Reply this email for any issues.</span>
+                    </td>
+                    <td style="padding: 40px 20px 0 0; width: 220px; font-size: 14px; color: #2f383d; line-height: 22px; text-align: right;" border="0">
+                        <img style="border:0; max-width:250px;" src="https://res.cloudinary.com/autovery-cloud-name/image/upload/v1717021702/autoverifyLogo_ady8oh.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr style="border: 0; margin: 30px 0 20px 0; padding: 0; border-bottom: 2px solid #f1f1f1;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0 30px 20px 30px;font-size:14px;color:#2f383d;line-height:22px;width:620px;max-width:620px;" border="0" colspan="2">
+                        {{ msg|safe }}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0 30px 20px 30px;font-size:12px;color:#999;line-height:22px;width:620px;max-width:620px;" border="0" colspan="2">
+                        <p>{{ footer|default:"Automation of sales and shipping digital products" }}</p>
+                        <p>{{ date|date:"F jS, Y \b\y H:i A" }}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" cellspacing="0" style="margin-top: 20px; margin-bottom: 20px; line-height: 22px;">
+            <tbody>
+                <tr>
+                    <td style="padding:0 30px 20px 30px;font-size:14px;color:#2f383d;line-height:22px;width:620px;text-align:center;" border="0">
+                        <a href="#" class="footer_automater" target="_blank" style="font-size:14px; color:#cecece; text-decoration: none;">
+                            Thanks for shopping
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
